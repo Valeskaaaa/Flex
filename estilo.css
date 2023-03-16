@@ -10,7 +10,7 @@ body{
 
 header{
     background-color: rgb(164, 9, 9);
-    width: 100%;
+    width: 100vw;
     height: 80px;
     display: flex;
     flex-direction: row;
@@ -27,6 +27,7 @@ header{
 ul{
     list-style-type: none;
     display: flex;
+    
 }
 
 ul > li{
@@ -37,6 +38,7 @@ ul > li{
     font-weight: 400;
     margin: 0;
     height: 80px;
+    transition: 1s;
 }
 
 ul > li:hover{
@@ -74,7 +76,7 @@ main{
 .linha{
     width: 80vw;
     height: 5px;
-    background-color: darkgreen;
+    background-color: rgb(28, 128, 19);
     margin: 10px 0;
 }
 
@@ -92,17 +94,21 @@ main > p{
     margin: 30px 30px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .card{
     width: 300px;
-    height: 400px;
    
 }
 
 .cards img{
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
+    
+}
+.cards img:hover{
+    opacity:0.7;
 }
 
 .cardinfo{
@@ -114,3 +120,67 @@ main > p{
     justify-content: center;
     align-items: center;
     margin-top: -5px;
+}
+
+.cardnome{
+color:white;
+    font-size:22px;
+    font-weight: 30px;
+    padding-bottom: 10px;
+}
+
+.cardpreco{
+   background-color:rgb(28, 128, 19); 
+   color: white;
+    width: 180px;
+    font-size:20px;
+    font-weight: 600;
+    padding:10px ;
+    text-align: center;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.cardpreco:hover{
+    background-color:rgb(38, 166, 27) ;
+}
+
+.botao{
+    background-color: rgb(28, 128, 19);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+a:link, a:visited{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    transition: 1s;
+}
+a:hover{
+    background: rgb(38, 166, 27);
+}
+footer{
+    background-color:rgb(164, 9, 9) ;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+footer address{
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+
+footer ul li {
+    text-transform: uppercase;
+    transition: 1s;
+}
+
+footer ul li:hover{
+    background-color: rgb(28, 128, 19);
+}
